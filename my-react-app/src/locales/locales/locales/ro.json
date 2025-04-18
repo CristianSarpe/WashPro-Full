@@ -1,0 +1,247 @@
+{
+  "contact": "Contacte",
+  "faq": "Întrebări frecvente",
+  "advantages": "Avantajele noastre",
+  "about_title": "Despre noi",
+  "about_description": "Oferim soluții complete pentru construirea spălătoriilor auto self-service, livrând echipamente de top, provenite de la mărci renumite din Germania și Italia. Prin contracte directe cu producătorii europeni, optimizăm costurile pentru componente de calitate superioară. Lucrările de construcție sunt realizate de o echipă profesionistă, în termen de 4-6 luni, respectând toate standardele de calitate. Toate echipamentele beneficiază de garanție și certificate de calitate.",
+  "about_image1": "Spălătorie Auto Modern",
+  "about_image2": "Echipamente Premium",
+  "about_image3": "Tehnologie Avansată",
+  "about_image_alt1": "Echipament Premium 1",
+  "about_image_alt2": "Echipament Premium 2",
+  "about_contact": "Contactează-ne",
+
+  
+
+    "payment_title": "Metode de Plată",
+    "payment_card_title": "Card Bancar",
+    "payment_card_description": "Acceptăm plăți cu orice card bancar contactless",
+    "payment_cash_title": "Cash",
+    "payment_cash_description": "Plată în numerar la terminalele noastre",
+    "payment_physical_card": "Card Fizic",
+    "payment_advantages": "Avantaje",
+    "payment_card_advantages": [
+        "Gratis",
+        "Reîncărcare rapidă",
+        "Sistem de loialitate integrat",
+        "Ușor de utilizat",
+        "Securitate maximă",
+        "Reduceri la servicii"
+    ],
+    "payment_app_title": "Aplicația PAYCar",
+    "payment_app_features": [
+        "Încărcare cont APPLE PAY și GOOGLE PAY",
+        "Sistem individual de loialitate",
+        "Indicații de orientare către cea mai apropiată spălătorie auto",
+        "Notificări PUSH către clienți",
+        "Vânzarea de servicii suplimentare prin intermediul aplicației",
+        "Nu necesită recuperare acestor carduri",
+        "Lipsesc costuri de achiziționare cardurilor de reducere",
+        "Nu poate fi copiat sau spart"
+    ],
+
+
+
+      "blog_title": "Blog & Noutăți",
+      "blog_subtitle": "Ultimele articole și sfaturi pentru întreținerea mașinii tale",
+      "blog_post1_title": "Cum să îți întreții mașina în sezonul rece",
+      "blog_post1_excerpt": "Sfaturi esențiale pentru întreținerea mașinii tale pe timp de iarnă. Află cum să-ți protejezi vopseaua și ce produse să folosești.",
+      "blog_post2_title": "Tehnologii noi în spălătoriile noastre",
+      "blog_post2_excerpt": "Am implementat cele mai noi tehnologii pentru spălarea și întreținerea mașinii tale. Descoperă avantajele echipamentelor moderne.",
+      "blog_post3_title": "Prezentarea Tehnologiilor Moderne",
+      "blog_post3_excerpt": "Inovațiile din domeniu, evidențiind cum noile tehnologii îmbunătățesc eficiența și experiența clienților.",
+      "blog_category_tips": "Sfaturi & Tips",
+      "blog_category_news": "Noutăți",
+      "blog_category_services": "Servicii",
+      "blog_view_all": "Vezi toate articolele",
+
+
+
+        "calculator_title": "Obțineți un calcul la cheie",
+        "calculator_subtitle": "Completați formularul și veți fi contactat pentru mai multe detalii despre spălătorie.",
+        "calculator_phone": "Număr de telefon",
+        "calculator_email": "Email",
+        "calculator_boxcount": "Număr de boxe",
+        "calculator_submit": "Trimite solicitarea",
+        "calculator_success_message": "✅ Cererea dumneavoastră a fost trimisă cu succes!",
+        "calculator_error": "❌ Eroare:",
+        "calculator_error_send": "❌ Eroare la trimiterea lead-ului",
+        "calculator_error_phone_required": "Numărul de telefon este obligatoriu",
+        "calculator_error_phone_invalid": "Număr de telefon invalid",
+        "calculator_error_email_required": "Adresa de email este obligatorie",
+        "calculator_error_email_invalid": "Adresă de email invalidă",
+        "calculator_error_boxcount_required": "Numărul de boxe este obligatoriu",
+        "calculator_error_boxcount_invalid": "Introduceți un număr valid de boxe",
+        
+
+        
+          "faq_title": "Întrebări Frecvente",
+          "faqs": [
+              {
+                  "question": "Cum pot obține un card de fidelitate?",
+                  "answer": "Poți obține cardul gratuit la orice spălătorie din rețeaua noastră. Tot ce trebuie să faci este să te prezinți la una dintre locații și să soliciți un card de fidelitate."
+              },
+              {
+                  "question": "Cum funcționează aplicația PAYCar?",
+                  "answer": "Aplicația PAYCar este disponibilă gratuit în App Store și Google Play. După descărcare, creezi un cont, adaugi metoda de plată preferată și poți începe să folosești serviciile noastre beneficiind de toate avantajele sistemului de loialitate."
+              },
+              {
+                  "question": "Care sunt metodele de plată acceptate?",
+                  "answer": "Acceptăm plăți prin card fizic de fidelitate, aplicația PAYCar, card bancar contactless și numerar. Pentru plățile prin aplicație, acceptăm și Apple Pay sau Google Pay."
+              },
+              {
+                  "question": "Ce fac dacă am uitat cardul fizic?",
+                  "answer": "În cazul uitării cardului la spălătorie, persoana de la spălătorie vă va contacta pentru a vă anunța, astfel vă puteți prezenta la orice spălătorie pentru a primi cardul dumneavoastră."
+              },
+              {
+                  "question": "Care este programul de funcționare?",
+                  "answer": "Spălătoriile noastre sunt deschise 24/7, oferind acces non-stop la toate serviciile noastre de spălare auto."
+              },
+              {
+                  "question": "Cum pot transfera banii de pe card în aplicație?",
+                  "answer": "Pentru a transfera soldul de pe cardul fizic în aplicația PAYCar, scanează codul QR al terminalului de plată unde se află cardul fizic."
+              }
+          ],
+
+
+
+            "footer_follow": "Urmărește-ne",
+            "footer_social_text": "Fii la curent cu ultimele noutăți și promoții!",
+            "footer_contact": "Contact",
+            "footer_address": "Adresă",
+            "footer_phone": "Telefon",
+            "footer_email": "Email",
+            "footer_schedule": "Program",
+            "footer_locations": "Locațiile Noastre",
+            "footer_map_title": "Locația noastră",
+            "footer_rights": "Toate drepturile rezervate.",
+
+
+
+
+              "work_steps_title": "Etapele de Lucru",
+              "work_steps_images": [
+                  "/src/assets/pag.etape/li.jpg",
+                  "/src/assets/pag.etape/indivi.jpg",
+                  "/src/assets/pag.etape/sp (1).webp"
+              ],
+              "work_steps": [
+                {
+                  "number": "00",
+                  "title": "PROIECTARE și CONFIRMĂRI",
+                  "shortDescription": "Dezvoltarea proiectului și obținerea autorizațiilor",
+                  "fullDescription": "• Dezvoltarea proiectului\n• Așezare pe locație, obținerea autorizațiilor locale"
+              },
+              {
+                  "number": "01",
+                  "title": "LUCRĂRI DE TERASAMENT",
+                  "shortDescription": "Trasarea terenului, canalizare, instalații de epurare și fundația",
+                  "fullDescription": "• Trasarea și amplasarea terenului conform proiectului\n• Lucrări de terasament pentru placa de beton și canalizare\n• Straturi de nisip și pietriș, vibrare beton\n• Instalarea sistemului de epurare a apelor uzate\n• Montaj puțuri (sistem bazin 2/3 buc.) direct la pista de spălare\n• Realizarea conductelor de apă și a rețelei de canalizare\n• Turnarea stratului de 100 mm de beton\n• Armare și montarea plăcilor metalice pentru coloane\n• Instalarea circuitelor pentru încălzirea în pardoseală\n• Montarea cofrajelor și turnarea plăcii de beton cu pantă de 5%"
+              },
+              {
+                  "number": "02",
+                  "title": "CONSTRUCȚIE",
+                  "shortDescription": "Construirea camerei tehnice, montarea structurii și acoperișului",
+                  "fullDescription": "• Construirea și amplasarea camerei tehnice\n• Montarea structurii metalice\n• Instalarea acoperișului din plăci de policarbonat\n• Montarea pereților despărțitori între boxe (banner/policarbonat)\n• Instalarea rețelelor electrice\n• Montarea elementelor publicitare (lightbox, logo)"
+              },
+              {
+                  "number": "03",
+                  "title": "INSTALAȚII",
+                  "shortDescription": "Montarea echipamentelor, furtunurilor, suporturilor și telecomenzilor",
+                  "fullDescription": "• Instalarea și conectarea echipamentului principal\n• Montarea furtunurilor de înaltă presiune cu cablu autoreglabil\n• Instalarea brațelor (console rotative)\n• Montarea suporturilor pentru pistoale și preșuri auto\n• Montaj telecomenzi\n• Punere în funcțiune și testare"
+              },
+              {
+                  "number": "04",
+                  "title": "FINALIZARE",
+                  "shortDescription": "Marcarea și amenajarea terenului",
+                  "fullDescription": "• Marcarea locurilor de parcare\n• Instalarea semnelor informative\n• Amenajarea finală a terenului"
+              }
+              ],
+              "app_steps_title": "Aplicația Pas cu Pas",
+              "app_steps_subtitle": "Rapid și convenabil",
+              "app_steps": [
+                  {
+                      "number": "01",
+                      "title": "Scanați QR sau selectați o spălătorie auto pe hartă",
+                      "description": "Fiecare spălătorie auto are propriul cont, selectează spălătoria auto unde vei folosi aplicația"
+                  },
+                  {
+                      "number": "02",
+                      "title": "Conectează-te la aplicație",
+                      "description": "Autorizarea se face prin număr de telefon și cod SMS"
+                  },
+                  {
+                      "number": "03",
+                      "title": "Încărcați soldul APPEPAY sau GPAY",
+                      "description": "Încărcați soldul și obțineți un bonus la prima înregistrare"
+                  },
+                  {
+                      "number": "04",
+                      "title": "Scanați codul QR",
+                      "description": "Transferați suma dorită pentru spălarea autovehiculului"
+                  },
+                  {
+                      "number": "05",
+                      "title": "Începeți să vă spălați mașina",
+                      "description": "Dacă fondurile s-au epuizat, puteți transfera suma necesară direct în aplicație"
+                  },
+                  {
+                      "number": "06",
+                      "title": "Ridicați restul",
+                      "description": "Dacă vă rămân bani la boxa de spălat, folosiți funcția de returnare în aplicație"
+                  },
+                  {
+                      "number": "07",
+                      "title": "Invitați un prieten și obțineți bonus",
+                      "description": "Trimiteți o invitație și obțineți un bonus pentru fiecare prieten care se înregistrează"
+                  },
+                  {
+                      "number": "08",
+                      "title": "Creșteți nivelul de bonus",
+                      "description": "Utilizați aplicația frecvent și creșteți bonusul în funcție de sistemul de fidelitate"
+                  }
+              ],
+              
+              
+
+                "advantages_title": "Avantajele Noastre",
+                "advantages_subtitle": "Descoperă ce ne face diferiți și de ce să ne alegi pe noi",
+                "advantage_1_title": "Sistem Modern de Plată",
+                "advantage_1_desc": "Plăți rapide și sigure prin multiple metode: card, aplicație mobilă sau numerar.",
+                "advantage_2_title": "Economie de produse chimice și alți detergenți",
+                "advantage_2_desc": "Datorită tehnologiei dezvoltate, știm să reducem cu 20-30% consumul de produse chimice, detergenți și polish.",
+                "advantage_3_title": "Echipamente Premium",
+                "advantage_3_desc": "Utilizăm doar echipamente de ultimă generație pentru cele mai bune rezultate.",
+                "advantage_4_title": "Serviciu de garanție",
+                "advantage_4_desc": "Oferim servicii complete pentru spălătoriile dumneavoastră: consultanță 24/7, piese de schimb și expertiză în rețeaua „Wash and GO” pentru un serviciu de garanție de calitate.",
+                "advantage_5_title": "PROPRIUL SOFTWARE",
+                "advantage_5_desc": "Folosind software-ul propriu, putem adapta echipamentele pentru fiecare client, cu soluții moderne precum controler PC sub Linux, contabilitate în cloud, PayCar, aplicație mobilă, CRM și altele.",
+                "advantage_6_title": "Sistem de plată PayCAR",
+                "advantage_6_desc": "Noul sistem de plată implementat la terminalul central oferă funcționalități moderne și avantaje pentru clienții de spălătorii auto self-service, inclusiv contabilitate financiară, stocare în cloud, CRM, baza de utilizatori și managementul programelor de reduceri.",
+                "advantage_7_title": "Sistem de bonusuri pentru client",
+                "advantage_7_desc": "Pentru clienții care des își spală mașina la spălătoria dumneavoastră, este posibilitate de acumula credit bonus pe card, ceea ce, desigur, îi va stimula de a folosi serviciu mai des.",
+                "advantage_8_title": "EXPERIENȚĂ mare în domeniul spălării auto",
+                "advantage_8_desc": "Cu 13 ani pe piața spălătoriilor auto self-service și peste 2000 de piste lansate, echipamentele noastre sunt prezente în 8 țări, iar rețeaua MC Wash and GO continuă să se dezvolte. Implementăm cele mai noi inovații în domeniu.",
+                
+                
+
+                "language": "RO",
+                "menu_home": "Pagina Principală",
+                "menu_work_steps": "Etapele de lucru",
+                "menu_faq": "Întrebări frecvente",
+                "menu_advantages": "Avantajele noastre",
+                "menu_contact": "Contacte",
+
+
+
+                "read_more": "Citește mai mult",
+
+                 
+
+
+                "stats_wash_tracks": "piste de spălare",
+                "stats_self_wash": "spălătorii auto cu autoservire",
+                "stats_cities": "orașe",
+                "stats_countries": "țări prezenți",
+                "stats_experience": "ani de experiență"
+}

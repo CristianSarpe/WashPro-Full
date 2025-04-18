@@ -1,0 +1,127 @@
+.payment-section {
+  padding: 4rem 0;
+  background-color: #f5f5f5;
+}
+
+.payment-title {
+  color: #413131;
+  text-align: center;
+  margin-bottom: 3rem !important;
+  font-weight: bold !important;
+}
+
+.payment-card {
+  height: 100%;
+}
+
+.payment-method {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  height: 100%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.method-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.method-title {
+  text-align: center;
+  flex-grow: 1;
+  margin-right: 1rem !important;
+}
+
+.payment-icon {
+  font-size: 3rem !important;
+  color: rgb(221, 221, 7);
+  flex-shrink: 0;
+}
+
+.method-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.advantages-list ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.advantages-list li {
+  margin-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.advantages-list li:before {
+  content: "✓";
+  color: rgb(221, 221, 7);
+  position: absolute;
+  left: 0;
+}
+
+.store-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: auto;
+}
+
+.store-button {
+  flex: 1;
+  padding: 1rem !important;
+}
+
+.store-button.apple {
+  background-color: #000 !important;
+  color: white !important;
+}
+
+.store-button.google {
+  background-color: #414141 !important;
+  color: white !important;
+}
+
+.other-methods {
+  background-color: #fd375b;
+  color: white !important;
+}
+
+.other-payment-method {
+  text-align: center;
+  padding: 2rem;
+}
+
+.other-payment-method .payment-icon {
+  font-size: 4rem !important;
+}
+
+@media (max-width: 600px) {
+  .payment-section {
+    padding: 2rem 1rem;
+  }
+
+  .store-buttons {
+    flex-direction: column;
+  }
+
+  .method-image {
+    max-height: 200px;
+  }
+}
+
+.card-image-container {
+  width: 480px;
+  height: 300px;  
+  border-radius: 20px;
+  overflow: hidden;
+}
