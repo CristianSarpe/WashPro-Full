@@ -11,13 +11,15 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // ✅ nou - servește fișierele statice din frontend-ul build-uit
-app.use(express.static(path.join(__dirname, "dist")));
+// app.use(express.static(path.join(__dirname, "dist")));
 
 // ✅ nou - toate rutele care nu sunt /api să trimită index.html (pentru frontend routing)
+/*
 app.get("*", (req, res) => {
     if (req.originalUrl.startsWith("/api")) return; // lasă API-urile să funcționeze
     res.sendFile(path.join(__dirname, "dist", "index.html"));
 });
+*/
 
 // 🔧 amoCRM config
 const AMOCRM_DOMAIN = process.env.AMOCRM_DOMAIN;
