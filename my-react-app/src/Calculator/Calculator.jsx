@@ -61,7 +61,7 @@ const Calculator = () => {
     if (!validateForm()) return;
 
     try {
-      const response = await fetch("http://localhost:5177/api/send-to-amocrm", {
+      const response = await fetch("https://washpro-full-backend.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
