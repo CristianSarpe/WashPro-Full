@@ -1,0 +1,15 @@
+# Node modules
+node_modules/
+.env
+
+# Build output
+dist/
+my-react-app/dist/
+backend/dist/
+
+# VS Code
+.vscode/
+.DS_Store
+
+# Logs
+*.log
