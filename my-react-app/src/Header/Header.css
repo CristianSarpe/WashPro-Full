@@ -48,12 +48,6 @@
   color: rgb(221, 221, 7);
 }
 
-@media (max-width: 600px) {
-  .header-right button:not(.menu-button) {
-    display: none;
-  }
-} 
-
 
 /* Adaugă aceste stiluri pentru meniul hamburger */
 .hamburger-icon {
@@ -91,8 +85,6 @@
 @media (max-width: 600px) {
   .menu-paper {
     width: 100% !important;
-    margin-top: 0 !important;
-    border-radius: 0 !important;
     max-height: calc(100vh - 56px) !important;
   }
 
@@ -112,4 +104,21 @@
   opacity: 0.9;
   text-shadow: 0 0 10px rgba(221, 221, 7, 0.3);
   transition: 0.3s;
+} 
+
+@media (max-width: 1400px) {
+  .header {
+    height: 64px;
+  }
+  
+  .header-right {
+    padding-left: 0;
+    width: 100%;
+    justify-content: right;
+  }
+  
+  .logo {
+    font-size: 1rem;
+  
+  }
 } 

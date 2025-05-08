@@ -1,7 +1,7 @@
 .about-section {
   min-height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                    url('/src/assets/carwash-bg.jpg');
+                    url('/assets/carwash-bg.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

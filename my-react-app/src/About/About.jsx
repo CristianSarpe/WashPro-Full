@@ -10,19 +10,19 @@ const About = () => {
 
   const projectImages = [
     {
-      url: '/src/assets/sp.webp',
+      url: '/assets/sp.webp',
       title: texts.about_image1
     },
     {
       type: 'dual',
       images: [
-        '/src/assets/pro.webp',
-        '/src/assets/Pult-base2-2.webp'
+        '/assets/pro.webp',
+        '/assets/Pult-base2-2.webp'
       ],
       title: texts.about_image2
     },
     {
-      url: '/src/assets/SRT.webp',
+      url: '/assets/SRT.webp',
       title: texts.about_image3
     }
   ];

@@ -6,11 +6,11 @@ const Statistics = () => {
   const { texts } = useContext(TranslationContext); // Accesăm textele traduse
 
   const stats = [
-    { img: "/src/assets/statistics/about-us-1.svg", number: "2000+", text: texts.stats_wash_tracks },
-    { img: "/src/assets/statistics/about-us-2.svg", number: "200+", text: texts.stats_self_wash },
-    { img: "/src/assets/statistics/about-us-3.svg", number: "100+", text: texts.stats_cities },
-    { img: "/src/assets/statistics/about-us-4.svg", number: "8", text: texts.stats_countries },
-    { img: "/src/assets/statistics/about-us-5.svg", number: "12", text: texts.stats_experience },
+    { img: "/assets/statistics/about-us-1.svg", number: "2000+", text: texts.stats_wash_tracks },
+    { img: "/assets/statistics/about-us-2.svg", number: "200+", text: texts.stats_self_wash },
+    { img: "/assets/statistics/about-us-3.svg", number: "100+", text: texts.stats_cities },
+    { img: "/assets/statistics/about-us-4.svg", number: "8", text: texts.stats_countries },
+    { img: "/assets/statistics/about-us-5.svg", number: "12", text: texts.stats_experience },
   ];
 
   return (

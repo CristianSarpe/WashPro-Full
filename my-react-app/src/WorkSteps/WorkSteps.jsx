@@ -120,7 +120,7 @@ const WorkSteps = () => {
             <Grid item xs={12} md={6}>
               <Box className="app-image-containers">
                 <img 
-                  src="/src/assets/app-device.webp" 
+                  src="/assets/app-device.webp" 
                   alt="Mobile App Steps" 
                   className="app-main-image"
                 />

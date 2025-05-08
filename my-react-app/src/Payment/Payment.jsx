@@ -59,7 +59,7 @@ const Payment = () => {
                 <CreditCardIcon className="payment-icon" />
               </Box>
               <Box className="card-image-container" >
-                <img src="/src/assets/card-fata.png" alt="Card Fizic" className="method-image" />
+                <img src="/assets/card-fata.png" alt="Card Fizic" className="method-image" />
               </Box>
               <Box className="advantages-list">
                 <Typography variant="h6" gutterBottom>
@@ -84,7 +84,7 @@ const Payment = () => {
                 <PhoneIphoneIcon className="payment-icon" />
               </Box>
               <Box className="app-image-container">
-                <img src="/src/assets/app-bg-mob.webp" alt="PAYCar App" className="method-image" />
+                <img src="/assets/app-bg-mob.webp" alt="PAYCar App" className="method-image" />
               </Box>
               <Box className="advantages-list">
                 <Typography variant="h6" gutterBottom>

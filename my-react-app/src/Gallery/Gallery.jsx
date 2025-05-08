@@ -5,7 +5,7 @@ import './Gallery.css';
 const Gallery = () => {
   const galleryItems = [
     {
-      img: './src/assets/img.spalatorii/1.jpg',
+      img: '/assets/img.spalatorii/1.jpg',
       title: 'Spălătorie Wash&Go',
       rows: 2,
       cols: 2,
@@ -24,13 +24,13 @@ const Gallery = () => {
       cols: 2,
     },
     {
-      img: './src/assets/img.spalatorii/2.jpg',
+      img: '/assets/img.spalatorii/2.jpg',
       title: 'Spalatorie Magdacesti',
       rows: 2,
       cols: 2,
     },
     {
-      img: './src/assets/img.spalatorii/3.jpg',
+      img: '/assets/img.spalatorii/3.jpg',
       title: 'Spălătorie Wash&Go',
       rows: 2,
       cols: 2,

@@ -10,49 +10,49 @@ const Advantages = () => {
     {
       title: texts.advantage_1_title,
       description: texts.advantage_1_desc,
-      image: "/src/assets/pag.avant/why-us-7.svg",
+      image: "/assets/pag.avant/why-us-7.svg",
       path: "/avantaje/sistem-plata"
     },
     {
       title: texts.advantage_2_title,
       description: texts.advantage_2_desc,
-      image: "/src/assets/pag.avant/why-us-2.svg",
+      image: "/assets/pag.avant/why-us-2.svg",
       path: "/avantaje/monitorizare"
     },
     {
       title: texts.advantage_3_title,
       description: texts.advantage_3_desc,
-      image: "/src/assets/pag.avant/why-us-1.webp",
+      image: "/assets/pag.avant/why-us-1.webp",
       path: "/avantaje/echipamente"
     },
     {
       title: texts.advantage_4_title,
       description: texts.advantage_4_desc,
-      image: "/src/assets/pag.avant/why-us-4.svg",
+      image: "/assets/pag.avant/why-us-4.svg",
       path: "/avantaje/program"
     },
     {
       title: texts.advantage_5_title,
       description: texts.advantage_5_desc,
-      image: "/src/assets/pag.avant/why-us-5.svg",
+      image: "/assets/pag.avant/why-us-5.svg",
       path: "/avantaje/loialitate"
     },
     {
       title: texts.advantage_6_title,
       description: texts.advantage_6_desc,
-      image: "/src/assets/pag.avant/why-us-6.svg",
+      image: "/assets/pag.avant/why-us-6.svg",
       path: "/avantaje/locatii"
     },
     {
       title: texts.advantage_7_title,
       description: texts.advantage_7_desc,
-      image: "/src/assets/locations.jpg",
+      image: "/assets/locations.jpg",
       path: "/avantaje/locatii"
     },
     {
       title: texts.advantage_8_title,
       description: texts.advantage_8_desc,
-      image: "/src/assets/pag.avant/why-us-3.svg",
+      image: "/assets/pag.avant/why-us-3.svg",
       path: "/avantaje/locatii"
     }
   ];

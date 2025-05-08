@@ -28,7 +28,7 @@ const Blog = () => {
     {
       title: texts.blog_post1_title,
       excerpt: texts.blog_post1_excerpt,
-      image: "/src/assets/blogs/th (7).webp",
+      image: "/assets/blogs/th (7).webp",
       date: "20 Mar 2024",
       category: texts.blog_category_tips,
       readTime: "5 min"
@@ -36,7 +36,7 @@ const Blog = () => {
     {
       title: texts.blog_post2_title,
       excerpt: texts.blog_post2_excerpt,
-      image: "/src/assets/blogs/76.jpg",
+      image: "/assets/blogs/76.jpg",
       date: "15 Mar 2024",
       category: texts.blog_category_news,
       readTime: "3 min"
@@ -44,7 +44,7 @@ const Blog = () => {
     {
       title: texts.blog_post3_title,
       excerpt: texts.blog_post3_excerpt,
-      image: "/src/assets/blogs/Modern-PC.webp",
+      image: "/assets/blogs/Modern-PC.webp",
       date: "10 Mar 2024",
       category: texts.blog_category_services,
       readTime: "4 min"
