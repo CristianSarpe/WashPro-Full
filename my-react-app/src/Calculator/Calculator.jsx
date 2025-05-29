@@ -7,11 +7,15 @@ import {
   TextField,
   Button,
   Paper,
-  InputAdornment
+  InputAdornment,
+  Accordion,
+  AccordionSummary,
+  AccordionDetails
 } from "@mui/material";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
 import BusinessIcon from "@mui/icons-material/Business";
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { TranslationContext } from "../TranslationContext"; // Importăm contextul de traducere
 import "./Calculator.css";
 
@@ -105,7 +109,7 @@ const Calculator = () => {
   return (
     <Box className="calculator-section">
       <Container maxWidth="lg">
-        <Grid container spacing={4} alignItems="center">
+        <Grid container spacing={4}>
           <Grid item xs={12} md={6}>
             <Typography variant="h2" className="calculator-title">
               {texts.calculator_title}
@@ -113,9 +117,7 @@ const Calculator = () => {
             <Typography variant="h6" className="calculator-subtitle">
               {texts.calculator_subtitle}
             </Typography>
-          </Grid>
 
-          <Grid item xs={12} md={6}>
             <Paper elevation={3} className="calculator-form-container">
               <form onSubmit={handleSubmit} className="calculator-form">
                 <TextField
@@ -180,6 +182,28 @@ const Calculator = () => {
                 {message && <Typography variant="body1" className="form-message">{message}</Typography>}
               </form>
             </Paper>
+          </Grid>
+
+          <Grid item xs={12} md={6}>
+            <Typography variant="h2" className="faq-title" gutterBottom>
+              {texts.faq_title}
+            </Typography>
+            
+            <Box className="faq-container">
+              {texts.faqs.map((faq, index) => (
+                <Accordion key={index} className="faq-accordion">
+                  <AccordionSummary
+                    expandIcon={<ExpandMoreIcon className="expand-icon" />}
+                    className="faq-question"
+                  >
+                    <Typography variant="h6">{faq.question}</Typography>
+                  </AccordionSummary>
+                  <AccordionDetails className="faq-answer">
+                    <Typography>{faq.answer}</Typography>
+                  </AccordionDetails>
+                </Accordion>
+              ))}
+            </Box>
           </Grid>
         </Grid>
       </Container>

@@ -35,21 +35,21 @@ const Footer = () => {
               </Typography>
               <Box className="social-icons">
                 <IconButton 
-                  href="https://facebook.com" 
+                  href="https://www.facebook.com/Washercar.md" 
                   target="_blank"
                   className="social-icon facebook"
                 >
                   <FacebookIcon />
                 </IconButton>
                 <IconButton 
-                  href="https://instagram.com" 
+                  href="https://www.instagram.com/liviusarpe/" 
                   target="_blank"
                   className="social-icon instagram"
                 >
                   <InstagramIcon />
                 </IconButton>
                 <IconButton 
-                  href="https://t.me/grupul_tau" // Înlocuiește cu link-ul real al grupului tău de Telegram
+                  href="https://web.telegram.org/a/#1785139663" // Înlocuiește cu link-ul real al grupului tău de Telegram
                   target="_blank"
                   className="social-icon telegram"
                 >

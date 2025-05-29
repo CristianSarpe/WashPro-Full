@@ -1,5 +1,5 @@
-import React, { useContext } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useContext, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './Header/Header.jsx';
 import About from './About/About.jsx';
 import Payment from './Payment/Payment.jsx';
@@ -15,11 +15,22 @@ import WorkSteps from './WorkSteps/WorkSteps.jsx';
 import { TranslationContext } from './TranslationContext.jsx'; // Import contextul de traducere
 import './App.css';
 
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
+
 function App() {
   const { texts } = useContext(TranslationContext); // Accesăm textele traduse
 
   return (
-    <Router>
+    <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+      <ScrollToTop />
       <div className="App">
         <Header />
         <Routes>

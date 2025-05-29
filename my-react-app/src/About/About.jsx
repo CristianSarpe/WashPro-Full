@@ -1,9 +1,33 @@
 import React, { useContext } from 'react';
-import { Container, Typography, Box, Button } from '@mui/material';
+import { Container, Typography, Box, Button, Grid } from '@mui/material';
 import Carousel from 'react-material-ui-carousel';
 import PhoneIcon from '@mui/icons-material/Phone';
+import BuildIcon from '@mui/icons-material/Build';
+import TrendingUpIcon from '@mui/icons-material/TrendingUp';
+import SpeedIcon from '@mui/icons-material/Speed';
+import HeadsetMicIcon from '@mui/icons-material/HeadsetMic';
 import { TranslationContext } from '../TranslationContext'; // Importăm contextul de traducere
 import './About.css';
+
+// Definim lista de oferte
+const offerings = [
+  {
+    icon: <BuildIcon fontSize="large" color="primary" />,
+    title: 'Analiză și proiectare eficiente',
+  },
+  {
+    icon: <TrendingUpIcon fontSize="large" color="primary" />,
+    title: 'Tehnologie avansată și fiabilă',
+  },
+  {
+    icon: <SpeedIcon fontSize="large" color="primary" />,
+    title: 'Instalare rapidă și completă',
+  },
+  {
+    icon: <HeadsetMicIcon fontSize="large" color="primary" />,
+    title: 'Suport continuu și consultanță',
+  },
+];
 
 const About = () => {
   const { texts } = useContext(TranslationContext); // Accesăm textele traduse
@@ -43,6 +67,27 @@ const About = () => {
           <Typography variant="body1" className="about-text">
             {texts.about_description} {/* Descriere tradusă */}
           </Typography>
+
+          {/* --- Secțiunea "Ce oferim" --- */}
+          <Box className="offering-section">
+            <Typography
+              className="offering-title"
+            >
+              {texts.about_offers} {/* Titlu din context: "Ce oferim" */}
+            </Typography>
+            <Grid container spacing={4} justifyContent="center">
+              {offerings.map((off, idx) => (
+                <Grid item xs={12} sm={6} md={3} key={idx} className="offering-item">
+                  <Box display="flex" flexDirection="column" alignItems="center">
+                    {off.icon}
+                    <Typography variant="subtitle1" align="center" sx={{ mt: 1 }}>
+                      {off.title}
+                    </Typography>
+                  </Box>
+                </Grid>
+              ))}
+            </Grid>
+          </Box>
 
           <Box className="carousel-container">
             <Carousel

@@ -1,6 +1,6 @@
 .blog-section {
   padding: 4rem 0;
-  background-color: #ffffff;
+  background-color: whitesmoke;
 }
 
 .blog-title {
@@ -57,8 +57,8 @@
 }
 
 .blog-category-chip {
-  background-color: rgb(221, 221, 7) !important;
-  color: #413131 !important;
+  background-color: antiquewhite !important;
+  color: var(--primary-color) !important;
   font-weight: 500 !important;
 }
 
@@ -112,16 +112,17 @@
 }
 
 .view-all-btn {
-  background-color: rgb(221, 221, 7) !important;
-  color: #413131 !important;
+  background-color: var(--primary-color) !important;
+  color: white !important;
   padding: 0.75rem 2rem !important;
   font-weight: 600 !important;
   border-radius: 25px !important;
 }
 
 .view-all-btn:hover {
-  background-color: #413131 !important;
-  color: rgb(221, 221, 7) !important;
+  background-color: #383E42 !important;
+  color: white !important;
+  transition: 0.5s;
 }
 
 .social-link {

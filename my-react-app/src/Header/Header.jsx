@@ -8,11 +8,8 @@ import {
   IconButton, 
   Menu, 
   MenuItem, 
-  Popper, 
-  Paper, 
-  ClickAwayListener,
-  MenuList,
-  Grow
+  Box,
+  Container
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import LanguageIcon from '@mui/icons-material/Language';
@@ -60,7 +57,6 @@ const Header = () => {
   const menuItems = [
     { text: texts.menu_home, path: '/' },
     { text: texts.menu_work_steps, path: '/etape' },
-    { text: texts.menu_faq, path: '/intrebari' },
     { text: texts.menu_advantages, path: '/avantaje' },
     { text: texts.menu_contact, path: '/contacte' }
   ];
@@ -72,93 +68,115 @@ const Header = () => {
   ];
 
   return (
-    <AppBar position="fixed" className="header">
-      <Toolbar>
-        <div className="logo-container">
-          <Typography 
-            variant="h6" 
-            className="logo" 
-            onClick={() => navigate('/')}
-            style={{ cursor: 'pointer' }}
-          >
-            Wash Pro
-          </Typography>
-        </div>
+    <>
+      <Box className="logo-banner">
+        <Container maxWidth="lg">
+          <Box className="logo-container">
+            <Typography 
+              variant="h4" 
+              className="logo" 
+              onClick={() => navigate('/')}
+            >
+              WASHER CAR
+            </Typography>
+          </Box>
+        </Container>
+      </Box>
+      <AppBar position="sticky" className="header">
+        <Container maxWidth="lg">
+          <Toolbar disableGutters>
+            <Box className="header-right">
+              {menuItems.map((item) => (
+                <Button
+                  key={item.text}
+                  onClick={() => navigate(item.path)}
+                  className="nav-button"
+                >
+                  {item.text}
+                </Button>
+              ))}
 
-        <div className="header-right">
-          <Button
-            color="inherit"
-            onClick={handleContactsOpen}
-          >
-            {texts.menu_contact} {/* Tradus */}
-          </Button>
-          <Menu
-            anchorEl={contactsAnchor}
-            open={Boolean(contactsAnchor)}
-            onClose={handleContactsClose}
-          >
-            {contacts.map((contact, index) => (
-              <MenuItem key={index} className="contact-item">
-                <a href={contact.link} style={{ textDecoration: 'none', color: 'inherit' }}>
-                  {contact.icon} {contact.text}
-                </a>
-              </MenuItem>
-            ))}
-          </Menu>
-
-          <Button
-            color="inherit"
-            onClick={handleLanguageOpen}
-            startIcon={<LanguageIcon />}
-          >
-            {texts.language} {/* Afișează limba curentă */}
-          </Button>
-          <Menu
-            anchorEl={languageAnchor}
-            open={Boolean(languageAnchor)}
-            onClose={handleLanguageClose}
-          >
-            <MenuItem key="ru" onClick={() => handleLanguageChange('ru')}>
-              Русский
-            </MenuItem>
-            <MenuItem key="ro" onClick={() => handleLanguageChange('ro')}>
-              Română
-            </MenuItem>
-          </Menu>
-
-          <IconButton
-            color="inherit"
-            edge="start"
-            onClick={handleMobileMenuOpen}
-            className="menu-button"
-          >
-            <MenuIcon className="hamburger-icon" />
-          </IconButton>
-          <Menu
-            anchorEl={mobileMenuAnchor}
-            open={Boolean(mobileMenuAnchor)}
-            onClose={handleMobileMenuClose}
-            className="mobile-menu"
-            PaperProps={{
-              className: "menu-paper"
-            }}
-          >
-            {menuItems.map((item) => (
-              <MenuItem 
-                key={item.text} 
-                onClick={() => {
-                  navigate(item.path);
-                  handleMobileMenuClose();
-                }}
-                className="menu-item"
+              <Button
+                onClick={handleContactsOpen}
+                className="contact-button"
               >
-                {item.text}
-              </MenuItem>
-            ))}
-          </Menu>
-        </div>
-      </Toolbar>
-    </AppBar>
+                {texts.menu_contact}
+              </Button>
+              <Menu
+                anchorEl={contactsAnchor}
+                open={Boolean(contactsAnchor)}
+                onClose={handleContactsClose}
+                PaperProps={{
+                  elevation: 3,
+                  className: "contact-menu"
+                }}
+              >
+                {contacts.map((contact, index) => (
+                  <MenuItem key={index} className="contact-item">
+                    <a href={contact.link}>
+                      {contact.icon} {contact.text}
+                    </a>
+                  </MenuItem>
+                ))}
+              </Menu>
+
+              <Button
+                onClick={handleLanguageOpen}
+                startIcon={<LanguageIcon />}
+                className="language-button"
+              >
+                {texts.language}
+              </Button>
+              <Menu
+                anchorEl={languageAnchor}
+                open={Boolean(languageAnchor)}
+                onClose={handleLanguageClose}
+                PaperProps={{
+                  elevation: 3,
+                  className: "language-menu"
+                }}
+              >
+                <MenuItem onClick={() => handleLanguageChange('ru')}>
+                  Русский
+                </MenuItem>
+                <MenuItem onClick={() => handleLanguageChange('ro')}>
+                  Română
+                </MenuItem>
+              </Menu>
+
+              <IconButton
+                onClick={handleMobileMenuOpen}
+                className="menu-button"
+              >
+                <MenuIcon />
+              </IconButton>
+              <Menu
+                anchorEl={mobileMenuAnchor}
+                open={Boolean(mobileMenuAnchor)}
+                onClose={handleMobileMenuClose}
+                className="mobile-menu"
+                PaperProps={{
+                  className: "menu-paper"
+                }}
+              >
+                {menuItems.map((item) => (
+                  <MenuItem 
+                    key={item.text} 
+                    onClick={() => {
+                      navigate(item.path);
+                      handleMobileMenuClose();
+                    }}
+                    className="menu-item"
+                  >
+                    {item.text}
+                  </MenuItem>
+                ))}
+              </Menu>
+            </Box>
+          </Toolbar>
+        </Container>
+      </AppBar>
+    </>
   );
 };
 

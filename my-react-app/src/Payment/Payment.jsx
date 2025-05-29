@@ -18,82 +18,92 @@ const Payment = () => {
           {texts.payment_title} {/* Titlu tradus */}
         </Typography>
 
-        <Grid container spacing={4}>
-          {/* Card Bancar și Cash */}
-          <Grid item xs={12} className="payment-card">
-            <Box className="payment-method other-methods">
-              <Grid container spacing={2}>
-                <Grid item xs={12} md={6}>
-                  <Box className="other-payment-method">
-                    <CreditCardIcon className="payment-icon" />
-                    <Typography variant="h5" gutterBottom>
-                      {texts.payment_card_title}
-                    </Typography>
-                    <Typography>
-                      {texts.payment_card_description}
-                    </Typography>
-                  </Box>
-                </Grid>
-                <Grid item xs={12} md={6}>
-                  <Box className="other-payment-method">
-                    <PaymentsIcon className="payment-icon" />
-                    <Typography variant="h5" gutterBottom>
-                      {texts.payment_cash_title}
-                    </Typography>
-                    <Typography>
-                      {texts.payment_cash_description}
-                    </Typography>
-                  </Box>
-                </Grid>
-              </Grid>
+        <Grid container spacing={3}>
+          {/* Card Bancar */}
+          <Grid item xs={12} sm={6} md={3} className="payment-card">
+            <Box className="payment-method">
+              <Box className="method-header">
+                <Typography variant="h5" className="method-title">
+                  {texts.payment_card_title}
+                </Typography>
+                <CreditCardIcon className="payment-icon" />
+              </Box>
+              <Box className="card-image-container">
+                <div className='bancar'>
+                <img src="../dist/assets/cardul-bancar.png" alt="Card Bancar" className="method-image" />
+                </div>
+              </Box>
+              <Box className="advantages-list">
+                <ul>
+                  <li>Plata instantanee</li>
+                  <li>Securitate maximă</li>
+                  <li>Acceptat peste tot</li>
+                </ul>
+              </Box>
+            </Box>
+          </Grid>
+
+          {/* Cash */}
+          <Grid item xs={12} sm={6} md={3} className="payment-card">
+            <Box className="payment-method">
+              <Box className="method-header">
+                <Typography variant="h5" className="method-title">
+                  {texts.payment_cash_title}
+                </Typography>
+                <PaymentsIcon className="payment-icon" />
+              </Box>
+              <Box className="card-image-container">
+                <img src="../dist/assets/card-cash.png" alt="Plată Cash" className="method-image" />
+              </Box>
+              <Box className="advantages-list">
+                <ul>
+                  <li>Plata directă</li>
+                  <li>Fără comisioane</li>
+                  <li>Control total</li>
+                </ul>
+              </Box>
             </Box>
           </Grid>
 
           {/* Card Fizic */}
-          <Grid item xs={12} md={6} className="payment-card">
-            <Box className="payment-method physical-card">
+          <Grid item xs={12} sm={6} md={3} className="payment-card">
+            <Box className="payment-method">
               <Box className="method-header">
-                <Typography variant="h4" className="method-title">
+                <Typography variant="h5" className="method-title">
                   {texts.payment_physical_card}
                 </Typography>
                 <CreditCardIcon className="payment-icon" />
               </Box>
-              <Box className="card-image-container" >
+              <Box className="card-image-container">
                 <img src="/assets/card-fata.png" alt="Card Fizic" className="method-image" />
               </Box>
               <Box className="advantages-list">
-                <Typography variant="h6" gutterBottom>
-                  {texts.payment_advantages}
-                </Typography>
                 <ul>
-                  {texts.payment_card_advantages.map((advantage, index) => (
-                    <li key={index}>{advantage}</li>
-                  ))}
+                  <li>Acces rapid</li>
+                  <li>Plata contactless</li>
+                  <li>Beneficii exclusive</li>
                 </ul>
               </Box>
             </Box>
           </Grid>
 
           {/* Aplicația PAYCar */}
-          <Grid item xs={12} md={6} className="payment-card">
-            <Box className="payment-method app">
+          <Grid item xs={12} sm={6} md={3} className="payment-card">
+            <Box className="payment-method">
               <Box className="method-header">
-                <Typography variant="h4" className="method-title">
+                <Typography variant="h5" className="method-title">
                   {texts.payment_app_title}
                 </Typography>
                 <PhoneIphoneIcon className="payment-icon" />
               </Box>
-              <Box className="app-image-container">
+              <Box className="card-image-container">
                 <img src="/assets/app-bg-mob.webp" alt="PAYCar App" className="method-image" />
               </Box>
               <Box className="advantages-list">
-                <Typography variant="h6" gutterBottom>
-                  {texts.payment_advantages}
-                </Typography>
                 <ul>
-                  {texts.payment_app_features.map((feature, index) => (
-                    <li key={index}>{feature}</li>
-                  ))}
+                  <li>Plata din aplicație</li>
+                  <li>Istoric tranzacții</li>
+                  <li>Notificări instant</li>
                 </ul>
               </Box>
               <Box className="store-buttons">
@@ -119,6 +129,18 @@ const Payment = () => {
             </Box>
           </Grid>
         </Grid>
+
+        <Box className="work-steps-button-container">
+          <Button
+            variant="contained"
+            color="primary"
+            size="large"
+            className="work-steps-button"
+            href="/etape"
+          >
+            Află etapele de lucru
+          </Button>
+        </Box>
       </Container>
     </Box>
   );

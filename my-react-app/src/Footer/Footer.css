@@ -1,35 +1,58 @@
 .footer {
-  background-color: #000000;
-  padding: 2rem 0 1rem;
-  color: white;
+  background-color: #383E42  ;
+  color: var(--white);
+  padding: 80px 0 20px;
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(245, 245, 245, 0.985);
+  z-index: 1;
 }
 
 .footer-section {
-  height: auto;
-  min-height: 200px;
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+  background-color: #383E42;
+  border-radius: 16px;
+  height: 100%;
+  transition: var(--transition);
+}
+
+.footer-section:hover {
+  background-color: #2b2f32;
+  transform: translateY(-5px);
 }
 
 .footer-title {
-  color: rgb(221, 221, 7) !important;
-  margin-bottom: 1rem !important;
-  font-weight: bold !important;
-  font-size: 1.2rem !important;
+  color: var(--primary-color) !important;
+  font-weight: 600 !important;
+  margin-bottom: 1.5rem !important;
+  font-size: 1.5rem !important;
 }
 
 /* Social Media Styles */
 .social-icons {
   display: flex;
   gap: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .social-icon {
-  color: white !important;
   background-color: rgba(255, 255, 255, 0.1) !important;
-  transition: all 0.3s ease !important;
+  color: var(--white) !important;
+  transition: var(--transition) !important;
 }
 
 .social-icon:hover {
+  background-color: var(--primary-color) !important;
   transform: translateY(-3px);
 }
 
@@ -46,7 +69,8 @@
 }
 
 .social-text {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7) !important;
+  line-height: 1.6 !important;
 }
 
 /* Contact Styles */
@@ -55,31 +79,35 @@
 }
 
 .contact-list .MuiListItem-root {
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding: 0.5rem 0 !important;
 }
 
 .contact-icon {
-  color: rgb(221, 221, 7) !important;
+  color: var(--primary-color) !important;
+  min-width: 40px !important;
 }
 
 .contact-list .MuiListItemText-primary {
-  color: rgb(221, 221, 7);
-  font-weight: 500;
-  font-size: 0.9rem !important;
+  color: var(--white) !important;
+  font-weight: 500 !important;
+  margin-bottom: 0.25rem !important;
 }
 
 .contact-list .MuiListItemText-secondary {
-  color: white !important;
-  font-size: 0.8rem !important;
+  color: rgba(255, 255, 255, 0.7) !important;
 }
 
 /* Map Styles */
 .map-container {
-  width: 100%;
-  border-radius: 8px;
+  border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+}
+
+.map-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
 .map-container iframe {
@@ -88,11 +116,50 @@
 
 /* Copyright */
 .copyright {
-  margin-top: 1.5rem;
-  padding-top: 1rem;
+  margin-top: 3rem;
+  padding-top: 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   text-align: center;
-  color: rgba(255, 255, 255, 0.7);
+  position: relative;
+  z-index: 2;
+}
+
+.copyright p {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Media queries */
+@media (max-width: 992px) {
+  .footer {
+    padding: 60px 0 20px;
+  }
+
+  .footer-section {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 0 20px;
+  }
+
+  .footer-title {
+    font-size: 1.3rem !important;
+  }
+
+  .footer-section {
+    padding: 1rem;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .contact-list .MuiListItem-root {
+    padding: 0.25rem 0 !important;
+  }
 }
 
 @media (max-width: 600px) {

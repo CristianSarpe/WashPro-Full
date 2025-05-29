@@ -33,7 +33,7 @@
   height: 160px !important;
   object-fit: contain !important;
   padding: 8px;
-  background-color: #f5f5f5;
+  background-color: #fffcfc;
   transition: transform 0.3s ease;
 }
 
