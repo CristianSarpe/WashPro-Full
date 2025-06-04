@@ -30,7 +30,7 @@ const Payment = () => {
               </Box>
               <Box className="card-image-container">
                 <div className='bancar'>
-                <img src="../dist/assets/cardul-bancar.png" alt="Card Bancar" className="method-image" />
+                <img src="/assets/cardul-bancar.png" alt="Card Bancar" className="method-image" />
                 </div>
               </Box>
               <Box className="advantages-list">
@@ -53,7 +53,7 @@ const Payment = () => {
                 <PaymentsIcon className="payment-icon" />
               </Box>
               <Box className="card-image-container">
-                <img src="../dist/assets/card-cash.png" alt="Plată Cash" className="method-image" />
+                <img src="/assets/card-cash.PNG" alt="Plată Cash" className="method-image" />
               </Box>
               <Box className="advantages-list">
                 <ul>
@@ -111,7 +111,7 @@ const Payment = () => {
                   variant="contained"
                   startIcon={<AppleIcon />}
                   className="store-button apple"
-                  href="#"
+                  href="https://apps.apple.com/ro/app/paycar-washercar/id1507669041"
                   target="_blank"
                 >
                   App Store
@@ -120,7 +120,7 @@ const Payment = () => {
                   variant="contained"
                   startIcon={<ShopIcon />}
                   className="store-button google"
-                  href="#"
+                  href="https://play.google.com/store/apps/details?id=com.carwasher.carwasher&pcampaignid=web_share"
                   target="_blank"
                 >
                   Google Play

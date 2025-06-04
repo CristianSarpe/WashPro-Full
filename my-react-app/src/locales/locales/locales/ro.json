@@ -122,9 +122,9 @@
 
               "work_steps_title": "Etapele de Lucru",
               "work_steps_images": [
-                  "/src/assets/pag.etape/li.jpg",
-                  "/src/assets/pag.etape/indivi.jpg",
-                  "/src/assets/pag.etape/sp (1).webp"
+                  "/assets/pag.etape/li.jpg",
+                  "/assets/pag.etape/indivi.jpg",
+                  "/assets/pag.etape/sp (1).webp"
               ],
               "work_steps": [
                 {

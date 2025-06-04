@@ -25,7 +25,7 @@ const offerings = [
   },
   {
     icon: <HeadsetMicIcon fontSize="large" color="primary" />,
-    title: 'Suport continuu și consultanță',
+    title: 'Suport continu și consultanță',
   },
 ];
 

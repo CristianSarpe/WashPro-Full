@@ -46,7 +46,7 @@ const Advantages = () => {
     {
       title: texts.advantage_7_title,
       description: texts.advantage_7_desc,
-      image: "../dist/assets/percent-symbol.webp",
+      image: "/assets/pag.avant/why-us-80.JPG",
       path: "/avantaje/locatii"
     },
     {
