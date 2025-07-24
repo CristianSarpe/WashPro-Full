@@ -118,6 +118,10 @@ const Calculator = () => {
               {texts.calculator_subtitle}
             </Typography>
 
+            <Typography variant="body1" style={{ marginBottom: '1rem', color: '#FF6B00', fontWeight: 600, textAlign: 'center' }}>
+              Pentru detalii rapide sunați la: <a href="tel:060234777" style={{color: '#FF6B00', textDecoration: 'underline'}}>060 234 777</a>
+            </Typography>
+
             <Paper elevation={3} className="calculator-form-container">
               <form onSubmit={handleSubmit} className="calculator-form">
                 <TextField

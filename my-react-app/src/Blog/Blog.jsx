@@ -63,7 +63,7 @@ const Blog = () => {
 
         <Grid container spacing={3} className="blog-grid">
           {blogPosts.map((post, index) => (
-            <Grid item xs={12} md={4} key={index}>
+            <Grid item xs={6} md={4} key={index}>
               <Card className="blog-card">
                 <CardMedia
                   component="img"
@@ -96,10 +96,10 @@ const Blog = () => {
                   </Typography>
                   
                   <Box className="blog-card-footer">
-                    <Typography variant="caption" className="blog-date">
-                      {post.date}
-                    </Typography>
-                    <div className="social-links">
+                    <Box className="blog-footer-top">
+                      <Typography variant="caption" className="blog-date">
+                        {post.date}
+                      </Typography>
                       <a 
                         href="https://www.facebook.com/your-page" 
                         target="_blank" 
@@ -108,6 +108,8 @@ const Blog = () => {
                       >
                         Facebook
                       </a>
+                    </Box>
+                    <Box className="blog-footer-bottom">
                       <a 
                         href="https://www.instagram.com/your-page" 
                         target="_blank" 
@@ -124,7 +126,7 @@ const Blog = () => {
                       >
                         TikTok
                       </a>
-                    </div>
+                    </Box>
                   </Box>
                 </CardContent>
               </Card>

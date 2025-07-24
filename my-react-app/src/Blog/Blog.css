@@ -85,9 +85,19 @@
 
 .blog-card-footer {
   display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: auto;
+}
+
+.blog-footer-top {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: auto;
+}
+
+.blog-footer-bottom {
+  gap: 1rem;
 }
 
 .blog-date {
@@ -104,6 +114,19 @@
   padding: 0.25rem 0.5rem;
   font-size: 0.8rem;
   border-radius: 3px;
+}
+
+/* Media queries pentru mobile */
+@media (max-width: 768px) {
+  .blog-footer-bottom {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  
+  .blog-card-footer .social-link {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.4rem;
+  }
 }
 
 .blog-footer {

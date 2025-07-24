@@ -69,7 +69,7 @@ const Advantages = () => {
 
         <Grid container spacing={4} className="advantages-grid">
           {advantages.map((advantage, index) => (
-            <Grid item xs={12} sm={6} md={3} key={index}>
+            <Grid item xs={6} sm={6} md={3} key={index}>
               <Card className="advantage-card" onClick={() => window.location.href = advantage.path}>
                 <CardMedia
                   component="img"

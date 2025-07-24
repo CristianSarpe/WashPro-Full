@@ -93,7 +93,7 @@ const Footer = () => {
                   </ListItemIcon>
                   <ListItemText 
                     primary={texts.footer_email}
-                    secondary="washpro@gmail.com"
+                    secondary="washercar.md@gmail.com"
                   />
                 </ListItem>
                 <ListItem>

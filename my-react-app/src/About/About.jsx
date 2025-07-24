@@ -134,7 +134,7 @@ const About = () => {
               size="large"
               startIcon={<PhoneIcon />}
               className="contact-button"
-              href="tel:+37378846477"
+              href="tel:+37360234777"
             >
               {texts.about_contact} {/* Text tradus pentru buton */}
             </Button>

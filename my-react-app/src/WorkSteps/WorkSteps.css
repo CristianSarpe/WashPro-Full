@@ -209,6 +209,13 @@
 }
 
 @media (max-width: 600px) {
+  .app-image-containers {
+    height: 300px;
+  }
+
+}
+
+@media (max-width: 600px) {
   .app-image-container {
     height: 200px;
   }

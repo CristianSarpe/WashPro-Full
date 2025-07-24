@@ -20,7 +20,7 @@ const Payment = () => {
 
         <Grid container spacing={3}>
           {/* Card Bancar */}
-          <Grid item xs={12} sm={6} md={3} className="payment-card">
+          <Grid item xs={6} sm={6} md={3} className="payment-card">
             <Box className="payment-method">
               <Box className="method-header">
                 <Typography variant="h5" className="method-title">
@@ -44,7 +44,7 @@ const Payment = () => {
           </Grid>
 
           {/* Cash */}
-          <Grid item xs={12} sm={6} md={3} className="payment-card">
+          <Grid item xs={6} sm={6} md={3} className="payment-card">
             <Box className="payment-method">
               <Box className="method-header">
                 <Typography variant="h5" className="method-title">
@@ -66,7 +66,7 @@ const Payment = () => {
           </Grid>
 
           {/* Card Fizic */}
-          <Grid item xs={12} sm={6} md={3} className="payment-card">
+          <Grid item xs={6} sm={6} md={3} className="payment-card">
             <Box className="payment-method">
               <Box className="method-header">
                 <Typography variant="h5" className="method-title">
@@ -88,7 +88,7 @@ const Payment = () => {
           </Grid>
 
           {/* Aplicația PAYCar */}
-          <Grid item xs={12} sm={6} md={3} className="payment-card">
+          <Grid item xs={6} sm={6} md={3} className="payment-card">
             <Box className="payment-method">
               <Box className="method-header">
                 <Typography variant="h5" className="method-title">

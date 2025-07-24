@@ -10,6 +10,10 @@
   padding: 0.5rem 0;
 }
 
+.header-right {
+  margin-right: 50px !important;
+}
+
 .logo-container {
   display: flex;
   align-items: center;
@@ -106,7 +110,7 @@
 }
 
 @media (max-width: 768px) {
-  .header-right button:not(.menu-button) {
+  .header-right button:not(.menu-button):not(.contact-button):not(.language-button) {
     display: none !important;
   }
 
@@ -195,7 +199,7 @@
 
 @media (max-width: 1400px) {
   .header {
-    height: 64px;
+    max-height: calc(100vh - 56px) !important;
   }
   
   .header-right {

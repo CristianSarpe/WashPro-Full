@@ -180,6 +180,12 @@
 }
 
 /* Media queries */
+@media (max-width: 500px) {
+  .card-image-container {
+    width: 180px;;
+  }
+}
+
 @media (max-width: 992px) {
   .payment-section {
     padding: 60px 0;
