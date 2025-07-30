@@ -135,6 +135,7 @@ const About = () => {
               startIcon={<PhoneIcon />}
               className="contact-button"
               href="tel:+37360234777"
+              onClick={() => gtag_report_conversion_main()}
             >
               {texts.about_contact} {/* Text tradus pentru buton */}
             </Button>

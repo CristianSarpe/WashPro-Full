@@ -96,12 +96,16 @@ const Header = () => {
                 </Button>
               ))}
 
-              <Button
-                onClick={handleContactsOpen}
-                className="contact-button"
-              >
-                {texts.menu_contact}
-              </Button>
+            <Button
+              onClick={() => {
+                gtag_report_conversion_header(); // înregistrează conversia
+                handleContactsOpen();            // deschide meniul contact
+              }}
+              className="contact-button"
+            >
+              {texts.menu_contact}
+            </Button>
+
               <Menu
                 anchorEl={contactsAnchor}
                 open={Boolean(contactsAnchor)}

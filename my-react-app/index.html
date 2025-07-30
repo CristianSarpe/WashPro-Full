@@ -13,8 +13,75 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'G-F8PSE2E843');
+      gtag('config', 'AW-17388659134'); // Google Ads ID
     </script>
-    
+
+    <!-- Google Ads Conversion Tracking: Telefon - Header -->
+    <script>
+      function gtag_report_conversion_header(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-17388659134/96RgCLy5rPwaEL7Dx-NA',
+            'event_callback': callback
+        });
+        return false;
+      }
+    </script>
+
+    <!-- Telefon - Contactează-mă -->
+    <script>
+      function gtag_report_conversion_main(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-17388659134/tGldCL-5rPwaEL7Dx-NA',
+            'event_callback': callback
+        });
+        return false;
+      }
+    </script>
+
+    <!-- Telefon - Form Suna Aici -->
+    <script>
+      function gtag_report_conversion_form(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-17388659134/nxJWCMK5rPwaEL7Dx-NA',
+            'event_callback': callback
+        });
+        return false;
+      }
+    </script>
+
+        <!-- Google Ads Conversion Tracking -->
+        <script>
+          function gtag_report_conversion(url) {
+            var callback = function () {
+              if (typeof(url) != 'undefined') {
+                window.location = url;
+              }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-17388659134/M1LMCJ2VnfcaEL7Dx-NA',
+                'value': 1.0,
+                'currency': 'USD',
+                'event_callback': callback
+            });
+            return false;
+          }
+        </script>
+
   </head>
   <body>
     <div id="root"></div>

@@ -61,9 +61,9 @@ const Calculator = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+  
     if (!validateForm()) return;
-
+  
     try {
       const response = await fetch("https://washpro-full-backend.onrender.com", {
         method: "POST",
@@ -71,15 +71,21 @@ const Calculator = () => {
         body: JSON.stringify({
           phone: formData.phone,
           email: formData.email,
-          boxes: parseInt(formData.boxCount) // 🔹 Convertim la număr
+          boxes: parseInt(formData.boxCount)
         }),
       });
-
+  
       const data = await response.json();
-
+  
       if (response.ok) {
         setMessage(texts.calculator_success_message);
-        setFormData({ phone: "", email: "", boxCount: "" }); // 🔹 Resetează formularul
+        setFormData({ phone: "", email: "", boxCount: "" });
+  
+        //  Apelează funcția de conversie Google Ads
+        if (typeof window.gtag_report_conversion === "function") {
+          window.gtag_report_conversion(); 
+        }
+  
       } else {
         setMessage(`${texts.calculator_error} ${data.error}`);
       }
@@ -88,6 +94,7 @@ const Calculator = () => {
       console.error("Eroare:", error);
     }
   };
+  
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -118,9 +125,24 @@ const Calculator = () => {
               {texts.calculator_subtitle}
             </Typography>
 
-            <Typography variant="body1" style={{ marginBottom: '1rem', color: '#FF6B00', fontWeight: 600, textAlign: 'center' }}>
-              Pentru detalii rapide sunați la: <a href="tel:060234777" style={{color: '#FF6B00', textDecoration: 'underline'}}>060 234 777</a>
-            </Typography>
+            <Typography
+            variant="body1"
+            style={{
+              marginBottom: '1rem',
+              color: '#FF6B00',
+              fontWeight: 600,
+              textAlign: 'center'
+            }}
+          >
+            Pentru detalii rapide sunați la:{" "}
+            <a
+              href="tel:060234777"
+              onClick={() => gtag_report_conversion_form()}
+              style={{ color: '#FF6B00', textDecoration: 'underline' }}
+            >
+              060 234 777
+            </a>
+          </Typography>
 
             <Paper elevation={3} className="calculator-form-container">
               <form onSubmit={handleSubmit} className="calculator-form">
