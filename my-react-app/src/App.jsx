@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-route
 import Header from './Header/Header.jsx';
 import About from './About/About.jsx';
 import Payment from './Payment/Payment.jsx';
+import Location from './Location/Location.jsx';
 import FAQ from './FAQ/FAQ.jsx';
 import Footer from './Footer/Footer.jsx';
 import Gallery from './Gallery/Gallery.jsx';
@@ -36,6 +37,7 @@ function App() {
         <Routes>
           <Route path="/" element={
             <>
+              <Location />
               <About />
               <Payment />
               <Gallery />
