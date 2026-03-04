@@ -151,17 +151,12 @@ app.post("/api/request-offer", async (req, res) => {
         return res.status(400).json({ error: "Cantitate invalidă (trebuie > 0) sau produs lipsă." });
     }
 
-    // Folosim câmpul existent BOXES_FIELD_ID pentru a nu introduce noi câmpuri în amoCRM.
-    // În contextul ofertei de detergenți, trimitem totalul de litri (rotunjit) în acest câmp.
-    const totalLitres = normalizedItems.reduce((sum, it) => sum + safeNumber(it.quantity), 0);
-
     const leadData = {
         name: `Cerere ofertă detergenți - ${String(name).trim()}`,
         pipeline_id: parseInt(PIPELINE_ID, 10),
         custom_fields_values: [
             { field_id: parseInt(PHONE_FIELD_ID, 10), values: [{ value: String(phone).trim() }] },
             { field_id: parseInt(EMAIL_FIELD_ID, 10), values: [{ value: String(email).trim() }] },
-            { field_id: parseInt(BOXES_FIELD_ID, 10), values: [{ value: Math.round(totalLitres) }] },
         ],
     };
 
@@ -216,8 +211,7 @@ app.post("/api/request-offer", async (req, res) => {
             console.error("Message:", error.message);
         }
 
-        const details = error.response ? error.response.data : undefined;
-        return res.status(500).json({ error: "Eroare la conectarea cu amoCRM", details });
+        return res.status(500).json({ error: "Eroare la conectarea cu amoCRM" });
     }
 });
 
