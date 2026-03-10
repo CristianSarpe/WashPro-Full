@@ -1,146 +1,111 @@
-import React, { useContext } from 'react';
-import { Container, Typography, Box, Button, Grid } from '@mui/material';
-import Carousel from 'react-material-ui-carousel';
-import PhoneIcon from '@mui/icons-material/Phone';
-import BuildIcon from '@mui/icons-material/Build';
-import TrendingUpIcon from '@mui/icons-material/TrendingUp';
-import SpeedIcon from '@mui/icons-material/Speed';
-import HeadsetMicIcon from '@mui/icons-material/HeadsetMic';
-import { TranslationContext } from '../TranslationContext'; // Importăm contextul de traducere
-import './About.css';
+import React, { useContext, useMemo } from "react";
+import { Container, Typography, Box, Button, Grid } from "@mui/material";
+import PhoneIcon from "@mui/icons-material/Phone";
+import BuildIcon from "@mui/icons-material/Build";
+import TrendingUpIcon from "@mui/icons-material/TrendingUp";
+import SpeedIcon from "@mui/icons-material/Speed";
+import HeadsetMicIcon from "@mui/icons-material/HeadsetMic";
+import VerifiedIcon from "@mui/icons-material/Verified";
+import LocalShippingIcon from "@mui/icons-material/LocalShipping";
+import SupportAgentIcon from "@mui/icons-material/SupportAgent";
+import { TranslationContext } from "../TranslationContext";
+import "./About.css";
 
-// Definim lista de oferte
 const offerings = [
   {
-    icon: <BuildIcon fontSize="large" color="primary" />,
-    title: 'Analiză și proiectare eficiente',
+    icon: <BuildIcon className="about-icon" />,
+    title: "Analiză și proiectare eficiente",
+    description: "Configurăm soluția potrivită fluxului tău: echipamente, consum, setări și mentenanță.",
   },
   {
-    icon: <TrendingUpIcon fontSize="large" color="primary" />,
-    title: 'Tehnologie avansată și fiabilă',
+    icon: <TrendingUpIcon className="about-icon" />,
+    title: "Tehnologie avansată și fiabilă",
+    description: "Produse și soluții testate pentru performanță constantă în regim intensiv.",
   },
   {
-    icon: <SpeedIcon fontSize="large" color="primary" />,
-    title: 'Instalare rapidă și completă',
+    icon: <SpeedIcon className="about-icon" />,
+    title: "Instalare rapidă și completă",
+    description: "Punere în funcțiune cu parametri clari și instruire pentru personal.",
   },
   {
-    icon: <HeadsetMicIcon fontSize="large" color="primary" />,
-    title: 'Suport continu și consultanță',
+    icon: <HeadsetMicIcon className="about-icon" />,
+    title: "Suport continu și consultanță",
+    description: "Răspundem rapid și te ajutăm să optimizezi consumul și calitatea spălării.",
   },
 ];
 
 const About = () => {
-  const { texts } = useContext(TranslationContext); // Accesăm textele traduse
+  const { texts } = useContext(TranslationContext);
 
-  const projectImages = [
-    {
-      url: '/assets/sp.webp',
-      title: texts.about_image1
-    },
-    {
-      type: 'dual',
-      images: [
-        '/assets/pro.webp',
-        '/assets/Pult-base2-2.webp'
-      ],
-      title: texts.about_image2
-    },
-    {
-      url: '/assets/SRT.webp',
-      title: texts.about_image3
-    }
-  ];
+  const trustBadges = useMemo(
+    () => [
+      { icon: <VerifiedIcon className="about-badge__icon" />, label: "Calitate controlată" },
+      { icon: <LocalShippingIcon className="about-badge__icon" />, label: "Livrare rapidă" },
+      { icon: <SupportAgentIcon className="about-badge__icon" />, label: "Suport tehnic" },
+    ],
+    []
+  );
 
   return (
-    <Box className="about-section">
+    <Box className="about-section" component="section" aria-label="Despre companie">
       <Container maxWidth="lg">
-        <Box className="about-content">
-          <Typography
-            variant="h2"
-            component="h2"
-            className="about-title"
-            gutterBottom
-          >
-            {texts.about_title} {/* Titlu tradus */}
-          </Typography>
-          
-          <Typography variant="body1" className="about-text">
-            {texts.about_description} {/* Descriere tradusă */}
-          </Typography>
+        <div className="about-content">
+          <div className="about-hero full-width-hero">
+            <div className="about-hero__text">
+              <Typography variant="h2" component="h2" className="about-title" gutterBottom>
+                {texts.about_title}
+              </Typography>
 
-          {/* --- Secțiunea "Ce oferim" --- */}
-          <Box className="offering-section">
-            <Typography
-              className="offering-title"
-            >
-              {texts.about_offers} {/* Titlu din context: "Ce oferim" */}
-            </Typography>
-            <Grid container spacing={4} justifyContent="center">
-              {offerings.map((off, idx) => (
-                <Grid item xs={12} sm={6} md={3} key={idx} className="offering-item">
-                  <Box display="flex" flexDirection="column" alignItems="center">
-                    {off.icon}
-                    <Typography variant="subtitle1" align="center" sx={{ mt: 1 }}>
-                      {off.title}
-                    </Typography>
-                  </Box>
-                </Grid>
-              ))}
-            </Grid>
-          </Box>
+              <Typography variant="body1" className="about-text">
+                {texts.about_description}
+              </Typography>
 
-          <Box className="carousel-container">
-            <Carousel
-              animation="slide"
-              interval={4000}
-              indicators={true}
-              navButtonsAlwaysVisible={true}
-              className="carousel"
-            >
-              {projectImages.map((item, index) => (
-                <Box key={index} className="carousel-item">
-                  {item.type === 'dual' ? (
-                    <div className="dual-image-container">
-                      <div className="dual-image-wrapper left">
-                        <img 
-                          src={item.images[0]} 
-                          alt={texts.about_image_alt1}
-                          className="dual-image"
-                        />
-                      </div>
-                      <div className="dual-image-wrapper right">
-                        <img 
-                          src={item.images[1]} 
-                          alt={texts.about_image_alt2}
-                          className="dual-image"
-                        />
+              <div className="about-badges" aria-label="Beneficii">
+                {trustBadges.map((b) => (
+                  <div key={b.label} className="about-badge">
+                    {b.icon}
+                    <span className="about-badge__label">{b.label}</span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="about-cta">
+                <Button
+                  variant="contained"
+                  size="large"
+                  startIcon={<PhoneIcon />}
+                  className="contact-button"
+                  href="tel:+37360234777"
+                  onClick={() => gtag_report_conversion_main()}
+                >
+                  {texts.about_contact}
+                </Button>
+                <p className="about-cta__note">Răspundem rapid. Consultanță gratuită pentru ofertă.</p>
+              </div>
+            </div>
+
+            <div className="about-hero__panel">
+              <Typography className="offering-title">{texts.about_offers}</Typography>
+              <Grid container spacing={2}>
+                {offerings.map((off) => (
+                  <Grid item xs={12} sm={6} key={off.title}>
+                    <div className="offering-card">
+                      <div className="offering-card__icon">{off.icon}</div>
+                      <div className="offering-card__body">
+                        <Typography variant="subtitle1" className="offering-card__title">
+                          {off.title}
+                        </Typography>
+                        <Typography variant="body2" className="offering-card__desc">
+                          {off.description}
+                        </Typography>
                       </div>
                     </div>
-                  ) : (
-                    <img src={item.url} alt={item.title} />
-                  )}
-                  <Typography variant="h6" className="carousel-title">
-                    {item.title}
-                  </Typography>
-                </Box>
-              ))}
-            </Carousel>
-          </Box>
-
-          <Box className="contact-button-container">
-            <Button
-              variant="contained"
-              color="primary"
-              size="large"
-              startIcon={<PhoneIcon />}
-              className="contact-button"
-              href="tel:+37360234777"
-              onClick={() => gtag_report_conversion_main()}
-            >
-              {texts.about_contact} {/* Text tradus pentru buton */}
-            </Button>
-          </Box>
-        </Box>
+                  </Grid>
+                ))}
+              </Grid>
+            </div>
+          </div>
+        </div>
       </Container>
     </Box>
   );

@@ -1,12 +1,12 @@
 .logo-banner {
-  background-color: var(--white);
-  padding: 1rem 0;
-  box-shadow: var(--shadow);
+  background: radial-gradient(circle at top left, rgba(15, 23, 42, 0.95) 0, #020617 40%, #000 100%);
+  padding: 0.75rem 0;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.8);
 }
 
 .header {
-  background-color: #383E42  !important;
-  box-shadow: var(--shadow);
+  background: rgba(15, 23, 42, 0.98) !important;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.9);
   padding: 0.5rem 0;
 }
 
@@ -21,16 +21,18 @@
 }
 
 .logo {
-  color: var(--primary-color) !important;
-  font-weight: 700 !important;
-  font-size: 2.5rem !important;
-  letter-spacing: 0.5px;
+  color: #f9fafb !important;
+  font-weight: 800 !important;
+  font-size: 2rem !important;
+  letter-spacing: 0.16em;
   cursor: pointer;
-  transition: var(--transition);
+  transition: transform 0.16s ease, text-shadow 0.16s ease;
+  text-shadow: 0 12px 30px rgba(0, 0, 0, 0.85);
 }
 
 .logo:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
+  text-shadow: 0 16px 40px rgba(0, 0, 0, 0.95);
 }
 
 .header-right {
@@ -41,33 +43,39 @@
 }
 
 .nav-button {
-  color: var(--white) !important;
+  color: rgba(249, 250, 251, 0.85) !important;
   font-weight: 500 !important;
   text-transform: none !important;
-  font-size: 1rem !important;
-  padding: 0.5rem 1rem !important;
-  border-radius: 8px !important;
-  transition: var(--transition) !important;
+  font-size: 0.95rem !important;
+  padding: 0.45rem 0.9rem !important;
+  border-radius: 999px !important;
+  transition: background-color 0.16s ease, color 0.16s ease, transform 0.16s ease !important;
 }
 
 .nav-button:hover {
-  background-color: rgba(255, 255, 255, 0.1) !important;
-  color: var(--primary-color) !important;
+  background-color: rgba(15, 23, 42, 0.9) !important;
+  color: #fb923c !important;
+  transform: translateY(-1px);
 }
 
-.contact-button, .language-button {
-  color: var(--white) !important;
-  font-weight: 500 !important;
+.contact-button,
+.language-button {
+  color: #0b0b0c !important;
+  font-weight: 600 !important;
   text-transform: none !important;
-  font-size: 1rem !important;
-  padding: 0.5rem 1rem !important;
-  border-radius: 8px !important;
-  transition: var(--transition) !important;
+  font-size: 0.95rem !important;
+  padding: 0.5rem 1.1rem !important;
+  border-radius: 999px !important;
+  background: linear-gradient(to right, #f97316, #fb923c) !important;
+  box-shadow: 0 14px 32px rgba(249, 115, 22, 0.5) !important;
+  transition: transform 0.16s ease, box-shadow 0.16s ease, opacity 0.16s ease !important;
 }
 
-.contact-button:hover, .language-button:hover {
-  background-color: rgba(255, 255, 255, 0.1) !important;
-  color: var(--primary-color) !important;
+.contact-button:hover,
+.language-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 40px rgba(249, 115, 22, 0.7) !important;
+  opacity: 0.96;
 }
 
 .contact-menu, .language-menu {
@@ -85,19 +93,19 @@
 }
 
 .contact-item:hover {
-  background-color: var(--light-gray) !important;
+  background-color: rgba(15, 23, 42, 0.95) !important;
 }
 
 .contact-item a {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: var(--secondary-color) !important;
+  color: #000;
   text-decoration: none !important;
 }
 
 .contact-item svg {
-  color: var(--primary-color);
+  color: #fb923c;
 }
 
 .menu-button {
@@ -150,19 +158,19 @@
 }
 
 .menu-paper {
-  background-color: var(--white) !important;
+  background-color: rgba(15, 23, 42, 0.98) !important;
   min-width: 200px !important;
   margin-top: 10px !important;
-  border-radius: 8px !important;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.95) !important;
 }
 
 .menu-item {
   padding: 12px 24px !important;
-  color: var(--secondary-color) !important;
+  color: rgba(249, 250, 251, 0.9) !important;
   font-weight: 500 !important;
-  transition: all 0.3s ease !important;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease !important;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.18);
   cursor: pointer;
 }
 
@@ -171,7 +179,7 @@
 }
 
 .menu-item:hover {
-  background-color: var(--light-gray) !important;
+  background-color: rgba(15, 23, 42, 0.95) !important;
   padding-left: 28px !important;
 }
 

@@ -1,13 +1,13 @@
 .payment-section {
   padding: 80px 0;
-  background-color: var(--background-color);
+  background: radial-gradient(circle at top, rgba(15, 23, 42, 0.96) 0, #020617 60%, #000 100%);
   position: relative;
 }
 
 .payment-title {
   font-size: 2.5rem !important;
   font-weight: 700 !important;
-  color: var(--secondary-color) !important;
+  color: #f9fafb !important;
   margin-bottom: 3rem !important;
   text-align: center;
 }
@@ -17,7 +17,7 @@
 }
 
 .payment-method {
-  background-color: #e6e8ea;
+  background-color: rgba(15, 23, 42, 0.98);
   border-radius: 16px;
   padding: 1.5rem;
   height: 100%;
@@ -40,7 +40,7 @@
 .other-payment-method {
   text-align: center;
   padding: 2rem;
-  background-color: var(--background-color);
+  background-color: rgba(15, 23, 42, 0.9);
   border-radius: 12px;
   height: 100%;
   transition: var(--transition);
@@ -62,12 +62,12 @@
 .method-title {
   font-size: 1.2rem !important;
   font-weight: 600 !important;
-  color: var(--secondary-color) !important;
+  color: #f9fafb !important;
 }
 
 .payment-icon {
   font-size: 2rem !important;
-  color: var(--primary-color);
+  color: #fb923c;
 }
 
 .card-image-container {
@@ -105,7 +105,7 @@
 
 .advantages-list li {
   padding: 0.3rem 0;
-  color: var(--text-color);
+  color: rgba(249, 250, 251, 0.78);
   position: relative;
   padding-left: 1.5rem;
   font-size: 0.9rem;
@@ -113,7 +113,7 @@
 
 .advantages-list li::before {
   content: '✓';
-  color: var(--primary-color);
+  color: #fb923c;
   position: absolute;
   left: 0;
   font-weight: bold;
@@ -162,8 +162,8 @@
 }
 
 .work-steps-button {
-  background-color: var(--primary-color) !important;
-  color: var(--white) !important;
+  background: linear-gradient(to right, #f97316, #fb923c) !important;
+  color: #0b0b0c !important;
   padding: 1rem 2.5rem !important;
   font-size: 1.2rem !important;
   font-weight: 600 !important;
@@ -175,8 +175,8 @@
 
 .work-steps-button:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15) !important;
-  background-color: #FF8533 !important;
+  box-shadow: 0 20px 50px rgba(249, 115, 22, 0.7) !important;
+  background-color: #fb923c !important;
 }
 
 /* Media queries */

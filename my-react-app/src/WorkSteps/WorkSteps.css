@@ -1,10 +1,10 @@
 .work-steps-section {
   padding: 4rem 0;
-  background-color: #f5f5f5;
+  background: radial-gradient(circle at top, rgba(15, 23, 42, 0.96) 0, #020617 60%, #000 100%);
 }
 
 .work-steps-title {
-  color: #383E42;
+  color: #f9fafb;
   text-align: center;
   font-weight: bold !important;
   margin-bottom: 3rem !important;
@@ -32,7 +32,7 @@
   display: flex;
   align-items: flex-start;
   padding: 1.8rem;
-  background-color: white;
+  background-color: rgba(15, 23, 42, 0.98);
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -47,14 +47,14 @@
 
 .step-item.active {
   opacity: 1;
-  background-color: #383E42;
+  background-color: #020617;
   transform: translateX(20px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   padding: 2rem;
 }
 
 .step-number {
-  color: var(--primary-color);
+  color: #fb923c;
   font-size: 3rem !important;
   font-weight: bold !important;
   margin-right: 1.5rem !important;
@@ -69,13 +69,13 @@
 }
 
 .step-title {
-  color: var(--primary-color);
+  color: #fb923c;
   font-weight: 600 !important;
   margin-bottom: 0.5rem !important;
 }
 
 .step-description {
-  color: #383E42;
+  color: rgba(249, 250, 251, 0.82);
   line-height: 1.6;
   white-space: pre-line;
   overflow: visible;

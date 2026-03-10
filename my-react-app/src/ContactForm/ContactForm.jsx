@@ -13,14 +13,14 @@ const ContactForm = () => {
         const formData = { phone, email, boxes }; // Trimite și numărul de boxe
 
         try {
-            const response = await fetch("http://localhost:5004/api/send-to-amocrm", {
+            const response = await fetch("http://localhost:5177/api/send-to-amocrm", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(formData),
             });
 
             const data = await response.json();
-
+ 
             if (response.ok) {
                 setMessage("✅ Lead trimis cu succes în amoCRM!");
                 setPhone(""); // Resetează câmpurile după trimitere

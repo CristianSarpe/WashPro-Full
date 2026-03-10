@@ -14,6 +14,7 @@ import Calculator from './Calculator/Calculator.jsx';
 import Advantages from './Advantages/Advantages.jsx';
 import WorkSteps from './WorkSteps/WorkSteps.jsx';
 import { TranslationContext } from './TranslationContext.jsx'; // Import contextul de traducere
+import ProductsSection from './ProductsSection.jsx';
 import './App.css';
 
 const ScrollToTop = () => {
@@ -37,7 +38,7 @@ function App() {
         <Routes>
           <Route path="/" element={
             <>
-              <Location />
+              <ProductsSection />
               <About />
               <Payment />
               <Gallery />
@@ -45,6 +46,7 @@ function App() {
               <Statistics />
               <Calculator />
               <FAQ />
+              <Location />
             </>
           } />
           <Route path="/etape" element={<WorkSteps />} />

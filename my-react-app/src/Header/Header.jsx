@@ -64,7 +64,7 @@ const Header = () => {
   const contacts = [
     { icon: <PhoneIcon />, text: '+373 60 234 777', link: 'tel:+37360234777' },
     { icon: <PhoneIcon />, text: '+373 60 234 111', link: 'tel:+37360234111' },
-    { icon: <EmailIcon />, text: 'washpro@gmail.com', link: 'mailto:washpro@gmail.com' }
+    { icon: <EmailIcon />, text: 'washercar@gmail.com', link: 'mailto:washercar@gmail.com' }
   ];
 
   return (

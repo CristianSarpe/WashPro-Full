@@ -1,17 +1,17 @@
 .blog-section {
   padding: 4rem 0;
-  background-color: whitesmoke;
+  background: radial-gradient(circle at top, rgba(15, 23, 42, 0.96) 0, #020617 60%, #000 100%);
 }
 
 .blog-title {
-  color: #413131;
+  color: #f9fafb;
   text-align: center;
   font-weight: bold !important;
   margin-bottom: 1rem !important;
 }
 
 .blog-subtitle {
-  color: #666;
+  color: rgba(249, 250, 251, 0.75);
   text-align: center;
   margin-bottom: 3rem !important;
 }
@@ -31,7 +31,7 @@
 
 .blog-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 24px rgba(0,0,0,0.15) !important;
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.9) !important;
 }
 
 .blog-card-media {

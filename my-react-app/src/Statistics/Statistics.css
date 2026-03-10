@@ -1,21 +1,23 @@
 .statistics-container {
   display: flex;
   justify-content: center;
-  gap: 40px;
-  padding: 15px 0;
+  gap: 32px;
+  padding: 24px 0;
 }
 
 .stat-box {
+  display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  background: var(--primary-color) !important;
-  color: white;
-  border-radius: 15px;
-  padding: 20px;
+  background: radial-gradient(circle at top, rgba(15, 23, 42, 0.98) 0, #020617 70%);
+  color: #f9fafb;
+  border-radius: 18px;
+  padding: 18px 20px;
   width: 210px;
-  height: 170 px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.275);
+  min-height: 160px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.85);
+  border: 1px solid rgba(148, 163, 184, 0.28);
 }
 
 .stat-img {
@@ -28,10 +30,11 @@
   font-size: 22px;
   font-weight: bold;
   height: 15px;
-  color: white;
+  color: #fb923c;
 }
 
 .stat-text {
-  font-size: 20px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+  color: rgba(249, 250, 251, 0.85);
 }
