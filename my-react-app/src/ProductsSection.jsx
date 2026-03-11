@@ -20,14 +20,7 @@ const formatMoney = (amount) => {
   return `${amount.toFixed(2)} ${CURRENCY}`;
 };
 
-const API_BASE =
-  (typeof import.meta !== "undefined" &&
-    import.meta.env &&
-    (import.meta.env.VITE_BACKEND_URL || import.meta.env.VITE_API_BASE_URL)) ||
-  (typeof process !== "undefined" &&
-    process.env &&
-    (process.env.NEXT_PUBLIC_BACKEND_URL || process.env.NEXT_PUBLIC_API_BASE_URL)) ||
-  "http://localhost:5177";
+const API_BASE = "https://washpro-full-backend.onrender.com";
 
 const ProductsSection = () => {
   const [quantities, setQuantities] = useState(
