@@ -6,13 +6,13 @@ const MAX_OFFER_ITEMS = 3;
 
 const PRODUCTS = [
   // Setează aici prețurile direct în MDL / L
-  { id: "foam-premium", name: "Spumă Activă", pricePerLitre: 36.36 },
-  { id: "liquid-wax", name: "Șampon Auto", pricePerLitre: 27.27 },
-  { id: "wheel-cleaner", name: "Ceară Auto Polimerică", pricePerLitre: 155 },
-  { id: "heavy-duty", name: "Activator de Spumă", pricePerLitre: 85 },
-  { id: "self-service", name: "Spumă Activă", pricePerLitre: 50 },
-  { id: "color-foam", name: "Negru de Cauciuc", pricePerLitre: 60 },
-  { id: "osmotic-rinse", name: "Polish - Interior", pricePerLitre: 150 },
+  { id: "foam-premium", name: "Spumă Activă pH 11,5", pricePerLitre: 36.36, imageSrc: "/assets/img.chimie/Universal.png" },
+  { id: "liquid-wax", name: "Șampon Auto", pricePerLitre: 27.27, imageSrc: "/assets/img.chimie/Prewasher.png" },
+  { id: "wheel-cleaner", name: "Ceară Auto Polimerică", pricePerLitre: 155, imageSrc: "/assets/img.chimie/NanoWax.png" },
+  { id: "heavy-duty", name: "Activator de Spumă", pricePerLitre: 85, imageSrc: "/assets/img.chimie/Instafoam.png" },
+  { id: "self-service", name: "Spumă Activă pH 12,5", pricePerLitre: 50, imageSrc: "/assets/img.chimie/Dominant.png" },
+  { id: "color-foam", name: "Negru de Cauciuc", pricePerLitre: 60, imageSrc: "/assets/img.chimie/BlackBrush.png" },
+  { id: "osmotic-rinse", name: "Polish - Interior", pricePerLitre: 150, imageSrc: "/assets/img.chimie/Briliant.png" },
 ];
 
 const formatMoney = (amount) => {
@@ -254,7 +254,16 @@ const ProductsSection = () => {
                     className="product-card"
                   >
                     <div>
-                      <div className="product-card__image" />
+                      <div className="product-card__image">
+                        {product.imageSrc && (
+                          <img
+                            src={product.imageSrc}
+                            alt={product.name}
+                            className="product-card__img"
+                            loading="lazy"
+                          />
+                        )}
+                      </div>
 
                       <h3 className="product-card__title">
                         {product.name}
